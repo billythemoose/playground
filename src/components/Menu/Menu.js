@@ -5,7 +5,7 @@ import { StyledMenu } from "./Menu.styled";
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <a href="/">
+      <a href="/playground">
         <span role="img" aria-label="projects" />
         Projects
       </a>
@@ -13,7 +13,7 @@ const Menu = ({ open }) => {
         <span role="img" aria-label="about" />
         About
         </a>
-      <a href="/">
+      <a href="/playground">
         <span role="img" aria-label="contact" />
         Contact
       </a>
