@@ -6,11 +6,11 @@ const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <a href="/">
-        <span role="img" aria-label="about us" />
+        <span role="img" aria-label="projects" />
         Projects
       </a>
-      <a href="/">
-        <span role="img" aria-label="price" />
+      <a href="https://billythemoose.github.io/" target="_blank" rel="noopener noreferrer">
+        <span role="img" aria-label="about" />
         About
         </a>
       <a href="/">
