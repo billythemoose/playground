@@ -4,6 +4,7 @@ import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { Burger, Menu } from './components';
 import { useOnClickOutside } from './hooks';
+import PostMain from './components/Post/PostMain';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -33,6 +34,7 @@ function App() {
             </a>
           </header>
         </div>
+        <PostMain title="testing" content="here's some content" />
       </React.Fragment>
     </ThemeProvider>
   );

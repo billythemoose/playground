@@ -3,4 +3,7 @@ export const theme = {
     primaryLight: '#EFFFFA',
     primaryHover: '#343078',
     mobile: '576px',
+    card: '#7C735F',
+    cardFont: '#FFFFFF',
+    background: '#282c34',
 }
