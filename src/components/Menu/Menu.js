@@ -13,10 +13,6 @@ const Menu = ({ open }) => {
         <span role="img" aria-label="about" />
         About
         </a>
-      <a href="/playground">
-        <span role="img" aria-label="contact" />
-        Contact
-      </a>
     </StyledMenu>
   )
 }

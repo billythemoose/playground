@@ -5,6 +5,7 @@ import { theme } from './theme';
 import { Burger, Menu } from './components';
 import { useOnClickOutside } from './hooks';
 import PostMain from './components/Post/PostMain';
+import Home from './components/Home/Home';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -19,22 +20,8 @@ function App() {
           <Burger open={open} setOpen={setOpen} />
           <Menu open={open} setOpen={setOpen} />
         </div>
-        <div className="App">
-          <header className="App-header">
-            <p>
-              Doin some <code>STUFF</code> and seeing what works.
-            </p>
-            <a
-              className="App-link"
-              href="https://github.com/billythemoose?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </header>
-        </div>
-        <PostMain title="testing" content="here's some content" />
+        <Home>
+        </Home>
       </React.Fragment>
     </ThemeProvider>
   );
