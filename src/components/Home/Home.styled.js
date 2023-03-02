@@ -8,7 +8,7 @@ export const StyledHome = styled.div`
     justify-content: center; 
     gap: 4.5rem; 
     padding: 1rem 2rem 1rem 6rem;
-    background-color: ${({ theme }) => theme.primaryDark };
+    background-color: ${({ theme }) => theme.darkBackground };
 `;
 
 export const StyledContent = styled.div`
@@ -29,7 +29,7 @@ export const StyledSearch = styled.section`
             font-weight: 700;
             font-size: 1.125rem;
             line-height: 160%;
-            color: ${({ theme }) => theme.secondaryDark };
+            color: ${({ theme }) => theme.darkTextHeading };
         }
 
         small {
@@ -37,20 +37,21 @@ export const StyledSearch = styled.section`
             font-weight: 400;
             font-size: 14px; 
             line-height: 160%; 
-            color: #FF0000
+            color: ${({ theme }) => theme.darkTextSubHeading };
         }
     }
 
     input {
         margin-top: 0.75rem;
-        background: ${({ theme }) => theme.card };
-        border: 1px solid ${({ theme }) => theme.primaryDark };
+        background: ${({ theme }) => theme.darkMidground };
+        border: 1px solid ${({ theme }) => theme.darkForeground };
         border-radius: 6px; 
-        padding: 0.75rem 0rem; 
+        box-sizing: border-box;
+        padding: 0.75rem 0rem 0.75rem 1rem; 
         width: 100%;
         color: #FFFFFF;
         &::placeholder {
-            color: #808080; 
+            color: ${({ theme }) => theme.darkTextOverlay };; 
         }
     }
 `;
@@ -60,9 +61,9 @@ export const StyledHeading = styled.div`
     width: 100%;
     height: 212px; 
     display: flex; 
-    background: ${({ theme }) => theme.primaryLight };
+    background: ${({ theme }) => theme.darkForeground };
     box-sizing: border-box;
-    box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 28px rgba(0, 0, 0, 0.5);
     border-radius: 10px; 
     padding: 2rem; 
     gap: 2rem;
@@ -87,6 +88,7 @@ export const StyledHeading = styled.div`
                 font-weight: 700; 
                 font-size: 1.5rem; 
                 line-height: 130%;
+                color: ${({ theme }) => theme.darkTextHeading };
             }
 
             a {
@@ -98,11 +100,11 @@ export const StyledHeading = styled.div`
                 display: flex; 
                 gap: 0.5rem; 
                 align-items: center; 
-                color: ${({ theme }) => theme.primaryDark };
+                color: ${({ theme }) => theme.darkHyperlink };
                 transition: border 0.2s
                 border-bottom: 2px solid transparent;
                 &:hover {
-                    border-bottom: 2px solid ${({ theme }) => theme.primaryHover };
+                    border-bottom: 2px solid ${({ theme }) => theme.darkHyperlink };
                 }
             }
         }
@@ -111,6 +113,7 @@ export const StyledHeading = styled.div`
             p {
                 margin-top: 0.5rem; 
                 word-wrap: break-word; 
+                color: ${({ theme }) => theme.darkTextMain };
             }
         }
 

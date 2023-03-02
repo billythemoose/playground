@@ -6,6 +6,7 @@ const PostMain = ({ title, content }) => {
         <StyledPostMainContainer>
             <StyledPostMain>
                 <PostCard title={title} content={content} />
+                <PostCard title="Test post" content="This is a base test post just to see what happens." />
             </StyledPostMain>
         </StyledPostMainContainer>
     );

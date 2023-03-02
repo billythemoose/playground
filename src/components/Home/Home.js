@@ -18,7 +18,7 @@ const Home = () => {
                     </main>
                     <footer>
                         <span>
-                            Dummy footer 
+                            Dummy footer, maybe something here eventually  
                         </span>
                     </footer>
                 </div>

@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background: background: ${({ theme }) => theme.primaryDark}; 
+        background: background: ${({ theme }) => theme.darkBackground}; 
         color: color: ${({ theme }) => theme.primaryLight};
     }
     
@@ -28,7 +28,7 @@ export const GlobalStyles = createGlobalStyle`
     }
       
     .App-header {
-      background-color: #282c34;
+      background-color: #111c34;
       min-height: 15vh;
       display: flex;
       flex-direction: column;

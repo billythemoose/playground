@@ -1,12 +1,14 @@
 export const theme = {
-    primaryDark: '#0D0C1D',
-    primaryLight: '#EFFFFA',
-    primaryHover: '#343078',
-    secondaryDark: '#49515F',
-    mobile: '576px',
-    card: '#7C735F',
-    cardFont: '#FFFFFF',
-    background: '#282c34',
     stupidColor: '#b0fa25',
     stupidColorDark: '#88ce05',
+
+    darkBackground: '#121212',
+    darkMidground: '#383838', 
+    darkForeground: '#5e5e5e', 
+    darkMenu: '#848484',
+    darkTextHeading: '#FFFFFF',
+    darkTextSubHeading: '#e5e5e5',
+    darkTextMain: '#FFFFFF',
+    darkTextOverlay: '#b1b1b1', 
+    darkHyperlink: '#89CFF0',
 }
